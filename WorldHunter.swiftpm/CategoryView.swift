@@ -21,7 +21,7 @@ struct CategoryView: View {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(items) { continent in
                     NavigationLink {
-                        FindWorldView(continent: continent)
+                        CountryQuizView(continent: continent)
                     } label: {
                         Label(continent, systemImage: "chevron.right.circle")
                             .font(.headline)

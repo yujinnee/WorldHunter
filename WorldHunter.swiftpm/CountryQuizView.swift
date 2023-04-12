@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct FindWorldView: View {
+struct CountryQuizView: View {
     var continent: String
     var body: some View {
         Text("Quiz")
     }
 }
 
-struct FindWorldView_Previews: PreviewProvider {
+struct CountryQuizView_Previews: PreviewProvider {
     static var previews: some View {
-        FindWorldView(continent: ModelData().continents[0])
+        CountryQuizView(continent: ModelData().continents[0])
     }
 }
