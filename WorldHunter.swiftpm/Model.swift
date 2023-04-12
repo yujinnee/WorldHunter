@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ModelData: ObservableObject {
+final class ModelData: ObservableObject,Identifiable {
     var continents = ["Asia","North America","South America","Africa","Oceania","Europe"]
     var countries = [Country(name: "Korea", neighbors: ["Japan","China","Russia"]),
                      Country(name: "USA", neighbors: ["Canada","Mexico"])]

@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct FindWorldView: View {
+    var continent: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Quiz")
     }
 }
 
 struct FindWorldView_Previews: PreviewProvider {
     static var previews: some View {
-        FindWorldView()
+        FindWorldView(continent: ModelData().continents[0])
     }
 }
