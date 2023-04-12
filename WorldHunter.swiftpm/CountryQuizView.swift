@@ -10,15 +10,39 @@ import SwiftUI
 struct CountryQuizView: View {
     @State private var showing = false
     var continent: String
+    @State private var currentPosition: CGSize = .zero
+    @State private var newPosition: CGSize = .zero
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Find Treasure!")
                 .font(.largeTitle)
-            Text("Neighbor : Russia, China, Japan")
+            Text("Neighbor : China, Japan")
                 .font(.title)
-            Image("Asia")
-                .resizable()
+            ZStack{
+                ZStack {
+                    Rectangle()
+                    Circle()
+                        .frame(width: 200, height: 200)
+                        .offset(x: self.currentPosition.width, y: self.currentPosition.height)
+                        .gesture(DragGesture()
+                            .onChanged { value in
+                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+                            }
+                            .onEnded { value in
+                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+                                self.newPosition = self.currentPosition
+                            })
+                        .blendMode(.destinationOut)
+                }
                 .frame(width:700, height:500)//프레임
+                .compositingGroup()
+                ZoomableImageView(image: UIImage(named:("Europe")) ?? UIImage())
+//                    .resizable()
+                    .frame(width:700, height:500)//프레임
+               
+            }
+            
             HStack{
                 Button("Korea") {
                         showing = true
