@@ -8,9 +8,51 @@
 import SwiftUI
 
 struct CountryQuizView: View {
+    @State private var showing = false
     var continent: String
     var body: some View {
-        Text("Quiz")
+        VStack(alignment: .leading){
+            Text("Find Treasure!")
+                .font(.largeTitle)
+            Text("Neighbor : Russia, China, Japan")
+                .font(.title)
+            Image("Asia")
+                .resizable()
+                .frame(width:700, height:500)//프레임
+            HStack{
+                Button("Korea") {
+                        showing = true
+                    }
+                    .alert("Correct", isPresented: $showing) {
+                        Button("OK", role: .cancel){showing = false}
+                    }
+                Button("India") {
+                        showing = true
+                    }
+                    .alert("Miss", isPresented: $showing) {
+                        Button("OK", role: .cancel){showing = false}
+                    }
+            }
+            HStack{
+                Button("Kazakhstan") {
+                        showing = true
+                    }
+                    .alert("Miss", isPresented: $showing) {
+                        Button("OK", role: .cancel){showing = false}
+                    }
+                Button("Mongolia") {
+                        showing = true
+                    }
+                    .alert("Miss", isPresented: $showing) {
+                        Button("OK", role: .cancel){showing = false}
+                    }
+            }
+            
+           
+            
+        }
+       
+        
     }
 }
 
