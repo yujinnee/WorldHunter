@@ -37,6 +37,11 @@ struct CountryQuizView: View {
                 }
                 .frame(width:700, height:500)//프레임
                 .compositingGroup()
+                
+                
+//                Image("Asia")
+//                    .resizable()
+//                    .frame(width:700, height:500)//프레임
                 ZoomableImageView(image: UIImage(named:("Europe")) ?? UIImage())
 //                    .resizable()
                     .frame(width:700, height:500)//프레임
