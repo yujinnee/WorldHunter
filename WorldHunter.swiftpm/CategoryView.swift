@@ -9,12 +9,11 @@ import SwiftUI
 
 struct CategoryView: View {
     var body: some View {
-        Text("카테고리뷰")
+   
     }
 }
 
 struct CategoryView_Previews: PreviewProvider {
-    
     static var previews: some View {
         CategoryView()
     }
