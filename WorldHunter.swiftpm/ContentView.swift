@@ -16,7 +16,7 @@ struct ContentView: View {
                     Label("Let's start", systemImage: "chevron.right.circle")
                 }
             }
-        }
+        }   .navigationViewStyle(StackNavigationViewStyle())
         
     }
 }
