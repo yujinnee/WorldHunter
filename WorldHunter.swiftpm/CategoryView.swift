@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SceneKit
+
 extension String: Identifiable {
     public typealias ID = Int
     public var id: Int {
@@ -18,8 +20,20 @@ struct CategoryView: View {
     let panorama = UIImage(named:"World2") ?? UIImage()
     
     var body: some View {
-        PanoramaView(image: panorama)
-                        .frame(height: 800)
+        let earthScene = EarthScene()
+        
+        SceneView(
+            scene: earthScene,
+                options: [
+                  .allowsCameraControl,
+                  .temporalAntialiasingEnabled
+                ])
+                .ignoresSafeArea()
+        
+//        PanoramaView(image: panorama)
+//                        .frame(height: 800)
+        
+        
 //        ScrollView(.horizontal, showsIndicators: false) {
 //            Image("World1")
 //                .resizable()
