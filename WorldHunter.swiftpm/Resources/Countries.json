@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "name": "Ethiopia",
+    "continent": "Africa",
+    "neighbors": [
+      "Sudan",
+      "Eritrea",
+      "Uganda",
+      "Kenya",
+      "Somalia"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Senegal",
+    "continent": "Africa",
+    "neighbors": [
+      "Guinea",
+      "Mali",
+      "Mauritania",
+      "Guinea-bissau",
+      "The gambia"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Zimbabwe",
+    "continent": "Africa",
+    "neighbors": [
+      "Zambia",
+      "Botswana",
+      "Namibia",
+      "Mozamibique"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Rwanda",
+    "continent": "Africa",
+    "neighbors": [
+      "Democratic Republic Of The Congo",
+      "Burundi",
+      "Tanzania",
+      "Uganda"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sudan",
+    "continent": "Africa",
+    "neighbors": [
+      "Egypt",
+      "Chad",
+      "Central African Republic",
+      "Uganda",
+      "Ethiopia",
+      "Eritrea"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "neighbors": [
+      "Ireland",
+      "France",
+      "Belgium",
+      "Netherlands",
+      "Denmark",
+      "Norway"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Poland",
+    "continent": "Europe",
+    "neighbors": [
+      "Germany",
+      "Czech Rep.",
+      "Slovakia",
+      "Ukraine",
+      "Belarus",
+      "Lithuania",
+      "Denmark",
+      "Sweden"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Moldova",
+    "continent": "Europe",
+    "neighbors": [
+      "Ukraine",
+      "Romania"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Belgium",
+    "continent": "Europe",
+    "neighbors": [
+      "United Kingdom",
+      "France",
+      "Netherlands",
+      "Germany",
+      "Luxembourg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sweden",
+    "continent": "Europe",
+    "neighbors": [
+      "Norway",
+      "Finland",
+      "Estonia",
+      "Latvia",
+      "Lithuania",
+      "Denmark"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "India",
+    "continent": "Asia",
+    "neighbors": [
+      "Nepal",
+      "Bangladesh",
+      "Pakistan",
+      "Kashimir",
+      "Srilanka"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Uzbekistan",
+    "continent": "Asia",
+    "neighbors": [
+      "Kazakhstan",
+      "Turkmenistan",
+      "Afghanistan",
+      "China"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Thailand",
+    "continent": "Asia",
+    "neighbors": [
+      "Cambodia",
+      "Vietnam",
+      "Laos",
+      "Myanmar"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Nepal",
+    "continent": "Asia",
+    "neighbors": [
+      "India",
+      "Kashmir",
+      "China",
+      "Bangladesh",
+      "Bhutan"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Pakistan",
+    "continent": "Asia",
+    "neighbors": [
+      "Iran",
+      "Afghanistan",
+      "Kashmir",
+      "India"
+    ]
+  }
+]

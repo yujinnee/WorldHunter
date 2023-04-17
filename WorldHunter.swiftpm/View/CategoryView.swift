@@ -16,7 +16,8 @@ extension String: Identifiable {
 }
 
 struct CategoryView: View {
-    var items = ModelData().continents
+//    var items = ModelData().continents
+    @EnvironmentObject var modelData: ModelData
 //    let panorama = UIImage(named:"World2") ?? UIImage()
     
     var body: some View {
@@ -48,18 +49,31 @@ struct CategoryView: View {
         //                .resizable()
         //                .frame(width:2500, height:1500)//프레임
                     HStack(alignment: .top, spacing: 0) {
-                        ForEach(items) { continent in
+                        
+                        ForEach(modelData.continents.keys.sorted(),id: \.self) { key in
                             NavigationLink {
-                                CountryQuizView(continent: continent)
+                                CountryQuizView(continentName: key, countries: modelData.continents[key]!)
                             } label: {
-                                Label(continent, systemImage: "chevron.right.circle")
+                                Label(key, systemImage: "chevron.right.circle")
                                     .font(.headline)
                                     .padding(.leading,15)
                                     .padding(.top, 5)
                                     .foregroundColor(.black)
                             }
-        
+                            
                         }
+//                        ForEach(items) { continent in
+//                            NavigationLink {
+//                                CountryQuizView(continent: continent, countries: <#[Country]#>)
+//                            } label: {
+//                                Label(continent, systemImage: "chevron.right.circle")
+//                                    .font(.headline)
+//                                    .padding(.leading,15)
+//                                    .padding(.top, 5)
+//                                    .foregroundColor(.black)
+//                            }
+//
+//                        }
                     }
                 //}
                 .frame(height: 185)
@@ -69,7 +83,7 @@ struct CategoryView: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView(items: ModelData().continents)
+        CategoryView().environmentObject(ModelData())
     }
 }
 
