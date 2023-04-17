@@ -17,9 +17,9 @@ struct ZoomableImageView: UIViewRepresentable {
     // set up the UIScrollView
     let scrollView = UIScrollView()
     scrollView.delegate = context.coordinator  // for viewForZooming(in:)
-    scrollView.maximumZoomScale = 8
+    scrollView.maximumZoomScale = 30
     scrollView.minimumZoomScale = 1
-    scrollView.bouncesZoom = true
+    scrollView.bouncesZoom = false
     scrollView.bounces = true
     scrollView.showsVerticalScrollIndicator = false
     scrollView.showsHorizontalScrollIndicator = false

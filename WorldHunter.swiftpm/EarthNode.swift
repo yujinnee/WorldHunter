@@ -13,7 +13,7 @@ class EarthNode: SCNNode {
     override init() {
         super.init()
         self.geometry = SCNSphere(radius: 5)
-        self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Diffuse")
+        self.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Earth")
 //        self.geometry?.firstMaterial?.specular.contents =
 //        UIImage(named: "Specular")
         

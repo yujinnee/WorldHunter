@@ -13,39 +13,45 @@ struct CountryQuizView: View {
     @State private var currentPosition: CGSize = .zero
     @State private var newPosition: CGSize = .zero
     
+//    @State private var scale: CGFloat = 1.0
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Find Treasure!")
                 .font(.largeTitle)
-            Text("Neighbor : China, Japan")
+            Text("Neighbor : Cuba, Jamaica, Dominican republic")
                 .font(.title)
             ZStack{
-                ZStack {
-                    Rectangle()
-                    Circle()
-                        .frame(width: 200, height: 200)
-                        .offset(x: self.currentPosition.width, y: self.currentPosition.height)
-                        .gesture(DragGesture()
-                            .onChanged { value in
-                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
-                            }
-                            .onEnded { value in
-                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
-                                self.newPosition = self.currentPosition
-                            })
-                        .blendMode(.destinationOut)
-                }
-                .frame(width:700, height:500)//프레임
-                .compositingGroup()
-                
-                
-//                Image("Asia")
+//                Image("map")
 //                    .resizable()
 //                    .frame(width:700, height:500)//프레임
-                ZoomableImageView(image: UIImage(named:("Europe")) ?? UIImage())
-//                    .resizable()
+                ZoomableImageView(image: UIImage(named:("Asia")) ?? UIImage())
                     .frame(width:700, height:500)//프레임
-               
+//                ZStack {
+//                    Rectangle()
+//                    Circle()
+//                        .frame(width: 200, height: 200)
+//                        .offset(x: self.currentPosition.width, y: self.currentPosition.height)
+//                        .gesture(DragGesture()
+//                            .onChanged { value in
+//                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+//                            }
+//                            .onEnded { value in
+//                                self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
+//                                self.newPosition = self.currentPosition
+//                            })
+////                        .gesture(
+////                                            MagnificationGesture()
+////                                                .onChanged { value in
+////                                                    self.scale = value.magnitude
+////                                                    print("Di")
+////                                                }
+////                                        )
+//
+//                        .blendMode(.destinationOut)
+//                }
+                .frame(width:700, height:500)//프레임
+                .compositingGroup()
             }
             
             HStack{

@@ -5,10 +5,12 @@ struct ContentView: View {
         
         NavigationView{
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 300,height: 300)
+                
                 Text("World Hunter")
+                    .font(.largeTitle)
                     
                 NavigationLink {
                     CategoryView()
