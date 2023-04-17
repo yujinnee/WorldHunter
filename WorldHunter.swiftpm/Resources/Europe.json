@@ -1,0 +1,56 @@
+[
+  {
+    "1": {
+      "name": "United Kingdom",
+      "neighbors": [
+        "Ireland",
+        "France",
+        "Belgium",
+        "Netherlands",
+        "Denmark",
+        "Norway"
+      ]
+    },
+    "2": {
+      "name": "Poland",
+      "neighbors": [
+        "Germany",
+        "Czech Rep.",
+        "Slovakia",
+        "Ukraine",
+        "Belarus",
+        "Lithuania",
+        "Denmark",
+        "Sweden"
+      ]
+    },
+    "3": {
+      "name": "Moldova",
+      "neighbors": [
+        "Ukraine",
+        "Romania"
+      ]
+    },
+    "4": {
+      "name": "Belgium",
+      "neighbors": [
+        "United Kingdom",
+        "France",
+        "Netherlands",
+        "Germany",
+        "Luxembourg"
+      ]
+    },
+    "5": {
+      "name": "Sweden",
+      "neighbors": [
+        "Norway",
+        "Finland",
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Denmark"
+      ]
+    }
+  }
+]
