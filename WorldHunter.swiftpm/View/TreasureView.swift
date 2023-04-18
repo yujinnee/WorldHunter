@@ -10,11 +10,20 @@ import ARKit
 import RealityKit
 
 struct TreasureView: View {
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack {
+            Text("Wow! You got a treasure!")
+                .font(.system(size: 50))
+            Text("Check your treasure through the camera!")
+            Text("If you look around, there will be treasure.")
             ARView().frame(width: 500, height: 500)
         }
+    
+        
     }
+    
+
 }
 
 struct TreasureView_Previews: PreviewProvider {
@@ -27,7 +36,7 @@ struct ARView:UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         let sceneView = ARSCNView()
         
-        guard let url = Bundle.main.url(forResource: "solar_panels", withExtension: "usdz") else { fatalError() }
+        guard let url = Bundle.main.url(forResource: "treasure", withExtension: "usdz") else { fatalError() }
         
         let scene = try! SCNScene(url: url, options: [.checkConsistency: true])
         sceneView.scene = scene
@@ -35,7 +44,8 @@ struct ARView:UIViewRepresentable {
         let spotLight = SCNNode()
         spotLight.light = SCNLight()
         spotLight.light?.type = .directional
-        
+        spotLight.eulerAngles = SCNVector3(x: -Float.pi / 4, y: Float.pi / 4, z: 0)
+
         sceneView.scene.rootNode.addChildNode(spotLight)
         
         

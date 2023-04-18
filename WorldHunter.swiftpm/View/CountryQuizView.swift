@@ -13,6 +13,11 @@ struct CountryQuizView: View {
     
     
     @State private var showing = false
+    @State private var match = false
+    
+    @State var shouldNavigate = false
+    @State var showAlert = false
+    
     @State private var currentPosition: CGSize = .zero
     @State private var newPosition: CGSize = .zero
     
@@ -58,7 +63,7 @@ struct CountryQuizView: View {
             HStack{
                 VStack{
                     ZStack{
-                        ZoomableImageView(image: UIImage(named:("Asia")) ?? UIImage())
+                        ZoomableImageView(image: UIImage(named:(continentName)) ?? UIImage())
                             .frame(width:600, height:400)//프레임
                         //                ZStack {
                         //                    Rectangle()
@@ -92,16 +97,33 @@ struct CountryQuizView: View {
                 
                 VStack{
                     ForEach(selectedElements) { country in
-                        Button {
-                            showing = true
-                        }label: {
-                            Text(country)
-                            //                            Image("btnAsia")
-                            //                                .resizable()
-                            //                                .frame(width:150,height: 50)
-                        }
-                        .alert("Correct", isPresented: $showing) {
-                            Button("OK", role: .cancel){showing = false}
+                        if shouldNavigate {
+                            NavigationLink(destination: TreasureView(), isActive: $shouldNavigate) {
+                                EmptyView()
+                            }
+                        } else {
+                            Button {
+                                if country == quizCountry.name { // 조건이 참일 때
+                                    shouldNavigate = true
+                                } else { // 조건이 거짓일 때
+                                    showAlert = true
+                                }
+                                
+                            }label: {
+                                ZStack{
+                                    Image("Button")
+                                        .resizable()
+                                        .frame(width:150,height: 50)
+                                    Text(country)
+                                        .font(.system(size: CGFloat(180/country.count)))
+                                        .foregroundColor(.white)
+                                }
+                                
+                            }
+                            .alert(isPresented: $showAlert) {
+//                                Button("Try Again", role: .cancel){showing = false}
+                                Alert(title: Text("No Treasure"), message: Text("Find Again"), dismissButton: .default(Text("OK")))
+                            }
                         }
                         
                     }
@@ -116,8 +138,8 @@ struct CountryQuizView: View {
             var randomIndex = Int.random(in: 0..<countries.count)
             quizCountry = countries[randomIndex]
             
-            var array = countries.map{$0.name}.filter{$0 != quizCountry.name}.shuffled().prefix(4).sorted()
-            lazy var answerIndex = Int.random(in: 0..<4)
+            var array = countries.map{$0.name}.filter{$0 != quizCountry.name && !quizCountry.neighbors.contains($0)}.shuffled().prefix(4).sorted()
+            lazy var answerIndex = Int.random(in: 0..<array.count)
             array[answerIndex] = quizCountry.name
             selectedElements = array
         }
