@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Group 29.png",
+      "filename" : "Earth.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 29@2x.png",
+      "filename" : "Earth@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 29@3x.png",
+      "filename" : "Earth@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
