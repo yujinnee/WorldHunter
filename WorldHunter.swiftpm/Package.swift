@@ -32,6 +32,9 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ],
+            capabilities: [
+                .camera(purposeString: "Allow your camera in order to use AR to view your treasure in real life!")
+            ],
             appCategory: .education
         )
     ],

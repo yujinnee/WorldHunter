@@ -16,74 +16,89 @@ extension String: Identifiable {
 }
 
 struct CategoryView: View {
-//    var items = ModelData().continents
+    @State var isNavigationLinkActive = false
+    //    var items = ModelData().continents
     @EnvironmentObject var modelData: ModelData
-//    let panorama = UIImage(named:"World2") ?? UIImage()
+    //    let panorama = UIImage(named:"World2") ?? UIImage()
     
     var body: some View {
-        //        let earthScene = EarthScene()
-        
-        SceneKitView()
-            .frame(width: 600,height: 600)
-//            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged { _ in })
-        //        SceneView(
-        //            scene: earthScene
-        //            ,
-        //                options: [
-        //                  .allowsCameraControl,
-        ////                  .temporalAntialiasingEnabled
-        //
-        //                ]
-        //        )
-        //        .gesture(PinchGesture().onChanged { _ in })
-        
-        
-        
-        
-        //        PanoramaView(image: panorama)
-        //                        .frame(height: 800)
-        
-        
-        //        ScrollView(.horizontal, showsIndicators: false) {
-        //            Image("World1")
-        //                .resizable()
-        //                .frame(width:2500, height:1500)//프레임
-                    HStack(alignment: .top, spacing: 0) {
+        VStack{
+            //        let earthScene = EarthScene()
+            Text("From now on, you will go hunting for hidden treasures all over the world.")
+                .font(.headline)
+            Text("Please choose which continent to go looking for treasure.")
+                .font(.headline)
+            
+            
+            HStack{
+                SceneKitView()
+                    .frame(width: 600,height: 600)
+                    .foregroundColor(.blue)
+                
+                VStack(alignment: .center, spacing: 0) {
+                    
+                    ForEach(modelData.continents.keys.sorted(),id: \.self) { key in
                         
-                        ForEach(modelData.continents.keys.sorted(),id: \.self) { key in
-                            NavigationLink {
-                                CountryQuizView(continentName: key, countries: modelData.continents[key]!)
-                            } label: {
-                                Label(key, systemImage: "chevron.right.circle")
-                                    .font(.headline)
-                                    .padding(.leading,15)
-                                    .padding(.top, 5)
-                                    .foregroundColor(.black)
-                            }
+                        NavigationLink {
+                            CountryQuizView(continentName: key, countries: modelData.continents[key]!,isNavigationLinkActive: $isNavigationLinkActive)            
+                            
+                        } label: {
+                            Image("btn\(key)")
+                                .resizable()
+                                .frame(width:200,height: 60 )
+                            
+                            
                             
                         }
-//                        ForEach(items) { continent in
-//                            NavigationLink {
-//                                CountryQuizView(continent: continent, countries: <#[Country]#>)
-//                            } label: {
-//                                Label(continent, systemImage: "chevron.right.circle")
-//                                    .font(.headline)
-//                                    .padding(.leading,15)
-//                                    .padding(.top, 5)
-//                                    .foregroundColor(.black)
-//                            }
-//
-//                        }
+                        
+                        
+                        
                     }
-                //}
-                .frame(height: 185)
+                }
+                
+                
+                
+                
+                //            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged { _ in })
+                //        SceneView(
+                //            scene: earthScene
+                //            ,
+                //                options: [
+                //                  .allowsCameraControl,
+                ////                  .temporalAntialiasingEnabled
+                //
+                //                ]
+                //        )
+                //        .gesture(PinchGesture().onChanged { _ in })
+                
+                
+                
+                
+                //        PanoramaView(image: panorama)
+                //                        .frame(height: 800)
+                
+                
+                //        ScrollView(.horizontal, showsIndicators: false) {
+                //            Image("World1")
+                //                .resizable()
+                //                .frame(width:2500, height:1500)//프레임
+                
+            }
+            
+            
+        }
+        .onAppear {
+            
+            isNavigationLinkActive = false
+            
+        }
         
     }
 }
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView().environmentObject(ModelData())
+        CategoryView().previewInterfaceOrientation(.landscapeRight).previewDevice("iPad mini (6th generation)").environmentObject(ModelData())
     }
 }
 

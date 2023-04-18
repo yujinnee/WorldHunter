@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         
@@ -8,10 +9,10 @@ struct ContentView: View {
                 Image("Logo")
                     .resizable()
                     .frame(width: 300,height: 300)
-                
+
                 Text("World Hunter")
                     .font(.largeTitle)
-                    
+
                 NavigationLink {
                     CategoryView()
                 } label: {
@@ -19,6 +20,10 @@ struct ContentView: View {
                 }
             }
         }   .navigationViewStyle(StackNavigationViewStyle())
+
+//            ARView().frame(width: 500, height: 500)
+
+       
         
     }
 }

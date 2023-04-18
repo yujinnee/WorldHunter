@@ -176,5 +176,228 @@
       "Kashmir",
       "India"
     ]
+  },
+  {
+    "id": 16,
+    "name": "Venezuela",
+    "continent": "South America",
+    "neighbors": [
+      "Colombia",
+      "Brazil",
+      "Guyana"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bolivia",
+    "continent": "South America",
+    "neighbors": [
+      "Paraguay",
+      "Afgentina",
+      "Chile",
+      "Peru"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Chile",
+    "continent": "South America",
+    "neighbors": [
+      "Argentina",
+      "Bolivia",
+      "Peru"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Paraguay",
+    "continent": "South America",
+    "neighbors": [
+      "Bolivia",
+      "Brazil",
+      "Argentina"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Uruguay",
+    "continent": "South America",
+    "neighbors": [
+      "Brazil",
+      "Argentina",
+      "Paraguay"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Ecuador",
+    "continent": "South America",
+    "neighbors": [
+      "Colombia",
+      "Peru",
+      "Panama"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Guyana",
+    "continent": "South America",
+    "neighbors": [
+      "Venezuela",
+      "Brazil",
+      "Suriname"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Mexico",
+    "continent": "North America",
+    "neighbors": [
+      "Guatemala",
+      "United States of America"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "United States of America",
+    "continent": "North America",
+    "neighbors": [
+      "Canada",
+      "Mexico"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Gutemala",
+    "continent": "North America",
+    "neighbors": [
+      "Belize",
+      "Honduras",
+      "Mexico",
+      "El Salvador"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Honduras",
+    "continent": "North America",
+    "neighbors": [
+      "Belize",
+      "Guatemala",
+      "El salvador",
+      "Nicaragua"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Cuba",
+    "continent": "North America",
+    "neighbors": [
+      "The Bahamas",
+      "Jamaica",
+      "Haiti",
+      "Belize",
+      "Guatemala"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Haiti",
+    "continent": "North America",
+    "neighbors": [
+      "The Bahamas",
+      "Cuba",
+      "Jamaica",
+      "Dominican Republic"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "El Salvador",
+    "continent": "North America",
+    "neighbors": [
+      "Guatemala",
+      "Honduras",
+      "Nicaragua"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Canada",
+    "continent": "North America",
+    "neighbors": [
+      "United States of America",
+      "Alaska(USA)"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Australia",
+    "continent": "Oceania",
+    "neighbors": [
+      "Papua New Guinea",
+      "New Zealand",
+      "Indonesia"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Vanuatu",
+    "continent": "Oceania",
+    "neighbors": [
+      "Solomon Islands",
+      "New Caledonia(France)"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "New Zealand",
+    "continent": "Oceania",
+    "neighbors": [
+      "Australia",
+      "New Caledonia(France)",
+      "Tasmania(Australia)"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Solomon Islands",
+    "continent": "Oceania",
+    "neighbors": [
+      "Papua New Guinea",
+      "Australia",
+      "New Caledonia(France)",
+      "Vanuatu"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Papua New Guinea",
+    "continent": "Oceania",
+    "neighbors": [
+      "Indonesia",
+      "Australia",
+      "Solomon Islands"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "New Caledonia(France)",
+    "continent": "Oceania",
+    "neighbors": [
+      "Vanuatu",
+      "Australia",
+      "Nea Zealand"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Tasmania(Australia)",
+    "continent": "Oceania",
+    "neighbors": [
+      "Australia",
+      "New Zealand",
+      "New Caledonia(France)"
+    ]
   }
 ]
