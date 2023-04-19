@@ -11,12 +11,13 @@ struct ContentView: View {
                     .frame(width: 300,height: 300)
 
                 Text("World Hunter")
-                    .font(.largeTitle)
+                    .font(.system(size: 60))
+                    .fontWeight(.heavy)
 
                 NavigationLink {
                     CategoryView()
                 } label: {
-                    Label("Let's start", systemImage: "chevron.right.circle")
+                    Image("btnStart")
                 }
             }
         }   .navigationViewStyle(StackNavigationViewStyle())

@@ -10,27 +10,63 @@ import ARKit
 import RealityKit
 
 struct TreasureView: View {
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) var presentationMode
+    @State private var isAnimating = false
     var body: some View {
         VStack {
             Text("Wow! You got a treasure!")
-                .font(.system(size: 50))
+                .font(.system(size: 30))
+                .fontWeight(.black)
+                .opacity(isAnimating ? 1 : 0)
+                .animation(Animation.easeIn(duration: 1.0).delay(0), value: isAnimating)
             Text("Check your treasure through the camera!")
+                .font(.system(size: 20))
+                .fontWeight(.regular)
+                .opacity(isAnimating ? 1 : 0)
+                .animation(Animation.easeIn(duration: 1.0).delay(1.0), value: isAnimating)
             Text("If you look around, there will be treasure.")
-            ARView().frame(width: 500, height: 500)
+                .font(.system(size: 20))
+                .fontWeight(.regular)
+                .opacity(isAnimating ? 1 : 0)
+                .animation(Animation.easeIn(duration: 1.0).delay(1.0), value: isAnimating)
+            
+            ARView().frame(width: 700, height: 500)
+                .opacity(isAnimating ? 1 : 0)
+                .animation(Animation.easeIn(duration: 1.0).delay(1.0), value: isAnimating)
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Image("btnAnother")
+                    .resizable()
+                    .frame(width: 504/2,height: 79/2)
+            })
+            
+            .opacity(isAnimating ? 1 : 0)
+            .animation(Animation.easeIn(duration: 1.0).delay(3.0), value: isAnimating)
+      
+           
+        }.onAppear{
+            isAnimating = true
         }
+        .navigationBarBackButtonHidden(true)
+        .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
+       
     
         
     }
     
+    
+    
+    
 
 }
 
-struct TreasureView_Previews: PreviewProvider {
-    static var previews: some View {
-        TreasureView()
-    }
-}
+
+//struct TreasureView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TreasureView().environmentObject(DISmis)
+//    }
+//}
 
 struct ARView:UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
@@ -56,4 +92,15 @@ struct ARView:UIViewRepresentable {
     
     func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
+
+
+//struct TreasureView_Previews: PreviewProvider {
+//
+//
+//    static var previews: some View {
+//        TreasureView()
+//            .previewInterfaceOrientation(.landscapeRight).previewDevice("iPad mini (6th generation)")
+//    }
+//
+//}
 

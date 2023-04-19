@@ -25,18 +25,33 @@ struct CategoryView: View {
         VStack{
             //        let earthScene = EarthScene()
             Text("From now on, you will go hunting for hidden treasures all over the world.")
-                .font(.headline)
+                .font(.system(size: 25))
+                .fontWeight(.bold)
+                .background(.yellow)
+            Spacer()
+                .frame(height: 10)
             Text("Please choose which continent to go looking for treasure.")
-                .font(.headline)
-            
-            
+                .font(.system(size: 25))
+                .fontWeight(.regular)
+            Spacer()
+                .frame(height:10)
+            Text("Swipe the Earth and look at the continent you want!")
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+           
             HStack{
-                SceneKitView()
-                    .frame(width: 600,height: 600)
-                    .foregroundColor(.blue)
+                
+                VStack{
+                    
+                    SceneKitView()
+                        .frame(width: 600,height: 600)
+                        .foregroundColor(.blue)
+                    
+                }
                 
                 VStack(alignment: .center, spacing: 0) {
                     
+                  
                     ForEach(modelData.continents.keys.sorted(),id: \.self) { key in
                         
                         NavigationLink {
@@ -87,6 +102,7 @@ struct CategoryView: View {
             
             
         }
+        .padding(EdgeInsets(top: 80, leading: 20, bottom: 20, trailing: 20))
         .onAppear {
             
             isNavigationLinkActive = false
