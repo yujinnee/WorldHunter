@@ -17,9 +17,9 @@ extension String: Identifiable {
 
 struct CategoryView: View {
     @State var isNavigationLinkActive = false
-    //    var items = ModelData().continents
+
     @EnvironmentObject var modelData: ModelData
-    //    let panorama = UIImage(named:"World2") ?? UIImage()
+
     
     var body: some View {
         VStack{
@@ -73,31 +73,6 @@ struct CategoryView: View {
                 
                 
                 
-                
-                //            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged { _ in })
-                //        SceneView(
-                //            scene: earthScene
-                //            ,
-                //                options: [
-                //                  .allowsCameraControl,
-                ////                  .temporalAntialiasingEnabled
-                //
-                //                ]
-                //        )
-                //        .gesture(PinchGesture().onChanged { _ in })
-                
-                
-                
-                
-                //        PanoramaView(image: panorama)
-                //                        .frame(height: 800)
-                
-                
-                //        ScrollView(.horizontal, showsIndicators: false) {
-                //            Image("World1")
-                //                .resizable()
-                //                .frame(width:2500, height:1500)//프레임
-                
             }
             
             
@@ -125,7 +100,7 @@ struct SceneKitView: UIViewRepresentable {
         let earthScene = EarthScene()
         sceneView.scene = earthScene
         sceneView.allowsCameraControl = true
-        // UIPinchGestureRecognizer 비활성화
+
         for recognizer in sceneView.gestureRecognizers ?? [] {
             if let panRecognizer = recognizer as? UIPanGestureRecognizer {
                 panRecognizer.minimumNumberOfTouches = 1 // 한 손가락 제스처만 허용하도록 수정

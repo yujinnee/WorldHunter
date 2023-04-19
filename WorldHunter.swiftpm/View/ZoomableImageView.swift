@@ -14,9 +14,8 @@ struct ZoomableImageView: UIViewRepresentable {
     var image: UIImage
     
     func makeUIView(context: Context) -> UIScrollView {
-        // set up the UIScrollView
         let scrollView = UIScrollView()
-        scrollView.delegate = context.coordinator  // for viewForZooming(in:)
+        scrollView.delegate = context.coordinator
         scrollView.maximumZoomScale = 30
         scrollView.minimumZoomScale = 1
         scrollView.bouncesZoom = false
@@ -42,14 +41,14 @@ struct ZoomableImageView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIScrollView, context: Context) {
-        // update the hosting controller\'s SwiftUI content
-        // TODO: Reset the zoom, so you need to get the scrollView as well
+
+
         context.coordinator.imageView.image = self.image
         let scrollView = context.coordinator.imageView.superview as! UIScrollView
         scrollView.zoomScale = 1.0
     }
     
-    // MARK: - Coordinator
+
     class Coordinator: NSObject, UIScrollViewDelegate {
         var imageView: UIImageView
         
@@ -67,11 +66,11 @@ struct ZoomableImageView: UIViewRepresentable {
         
         func centerImage() {
             
-            // center the zoom view as it becomes smaller than the size of the screen
+
             let boundsSize = imageView.bounds.size
             var frameToCenter = imageView.frame
             
-            // center horizontally
+
             if frameToCenter.size.width < boundsSize.width {
                 frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width)/2
             }
@@ -79,7 +78,7 @@ struct ZoomableImageView: UIViewRepresentable {
                 frameToCenter.origin.x = 0
             }
             
-            // center vertically
+
             if frameToCenter.size.height < boundsSize.height {
                 frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height)/2
             }

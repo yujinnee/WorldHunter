@@ -94,13 +94,4 @@ struct ARView:UIViewRepresentable {
 }
 
 
-//struct TreasureView_Previews: PreviewProvider {
-//
-//
-//    static var previews: some View {
-//        TreasureView()
-//            .previewInterfaceOrientation(.landscapeRight).previewDevice("iPad mini (6th generation)")
-//    }
-//
-//}
 

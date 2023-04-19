@@ -22,7 +22,6 @@ struct ContentView: View {
             }
         }   .navigationViewStyle(StackNavigationViewStyle())
 
-//            ARView().frame(width: 500, height: 500)
 
        
         

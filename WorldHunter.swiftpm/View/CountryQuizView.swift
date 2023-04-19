@@ -56,13 +56,7 @@ struct CountryQuizView: View {
                 ZoomableImageView(image: UIImage(named:(continentName)) ?? UIImage())
                     .opacity(isAnimating ? 1 : 0)
                     .animation(Animation.easeIn(duration: 1.0).delay(0), value: isAnimating)
-                //                        .frame(width:700, height:500)//프레임
-                //                        .border(.black,width: 15.0)
-                //                        .cornerRadius(50)
-                
-                
-                //                        .compositingGroup()
-                //                        .scaleEffect(scale)
+
                 Text("You can zoom in and out the map using two fingers. And you can drag it with one finger to move the map.")
                     .font(.system(size: 15))
                     .fontWeight(.semibold)
@@ -70,16 +64,7 @@ struct CountryQuizView: View {
                     .multilineTextAlignment(.center)
                     .opacity(isAnimating ? 1 : 0)
                     .animation(Animation.easeIn(duration: 2.0).delay(7.0), value: isAnimating)
-//                    .frame(width: 400)
-//                Text(" You can zoom in and out using two fingers. And you can drag it with one finger to move the map.")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.semibold)
-//                    .foregroundColor(.gray)
-//                    .multilineTextAlignment(.center)
-//                    .opacity(isAnimating ? 1 : 0)
-//                    .animation(Animation.easeIn(duration: 2.0).delay(5.0), value: isAnimating)
-////                    .frame(width: 400)
-                
+
                 
             }
             
@@ -179,7 +164,7 @@ struct CountryQuizView: View {
                 
                 
             }
-//            .frame(height:650)
+
 
             
         }
