@@ -60,64 +60,64 @@
   },
   {
     "id": 6,
-    "name": "United Kingdom",
-    "continent": "Europe",
+    "name": "Niger",
+    "continent": "Africa",
     "neighbors": [
-      "Ireland",
-      "France",
-      "Belgium",
-      "Netherlands",
-      "Denmark",
-      "Norway"
+      "Algeria",
+      "Libya",
+      "Mali",
+      "Chad",
+      "Burkina Faso",
+      "Benin",
+      "Nigeria"
     ]
   },
   {
     "id": 7,
-    "name": "Poland",
-    "continent": "Europe",
+    "name": "Congo",
+    "continent": "Africa",
     "neighbors": [
-      "Germany",
-      "Czech Rep.",
-      "Slovakia",
-      "Ukraine",
-      "Belarus",
-      "Lithuania",
-      "Denmark",
-      "Sweden"
+      "Cameroon",
+      "Democratic Republic of the Congo",
+      "Cabinda (Province)"
     ]
   },
   {
     "id": 8,
-    "name": "Moldova",
-    "continent": "Europe",
+    "name": "Benin",
+    "continent": "Africa",
     "neighbors": [
-      "Ukraine",
-      "Romania"
+      "Nigeria",
+      "Togo",
+      "Burkina Faso",
+      "Niger"
     ]
   },
   {
     "id": 9,
-    "name": "Belgium",
-    "continent": "Europe",
+    "name": "Guinea",
+    "continent": "Africa",
     "neighbors": [
-      "United Kingdom",
-      "France",
-      "Netherlands",
-      "Germany",
-      "Luxembourg"
+      "Sierra Leone",
+      "Liberia",
+      "Mali",
+      "Guinea-Bissau",
+      "Cote D'ivoire"
     ]
   },
   {
     "id": 10,
-    "name": "Sweden",
-    "continent": "Europe",
+    "name": "Tanzania",
+    "continent": "Africa",
     "neighbors": [
-      "Norway",
-      "Finland",
-      "Estonia",
-      "Latvia",
-      "Lithuania",
-      "Denmark"
+      "Kenya",
+      "Uganda",
+      "Rwanda",
+      "Burindi",
+      "Mozambique",
+      "Malawi",
+      "Zambia",
+      "Democratic Republic of The Congo"
     ]
   },
   {
@@ -179,6 +179,181 @@
   },
   {
     "id": 16,
+    "name": "Syria",
+    "continent": "Asia",
+    "neighbors": [
+      "Iraq",
+      "Lebanon",
+      "Jordan",
+      "Turkey",
+      "Cyprus"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Yemen",
+    "continent": "Asia",
+    "neighbors": [
+      "Saudi Arabia",
+      "Oman",
+      "Djibouti",
+      "Eritera"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Israel",
+    "continent": "Asia",
+    "neighbors": [
+      "Jordan",
+      "Lebanon",
+      "Cyprus",
+      "Syria",
+      "Egypt"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "South Korea",
+    "continent": "Asia",
+    "neighbors": [
+      "China",
+      "Japan",
+      "North Korea"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Qatar",
+    "continent": "Asia",
+    "neighbors": [
+      "Saudi Arabia",
+      "Iran",
+      "United Arab Emirates"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "neighbors": [
+      "Ireland",
+      "France",
+      "Belgium",
+      "Netherlands",
+      "Denmark",
+      "Norway"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Poland",
+    "continent": "Europe",
+    "neighbors": [
+      "Germany",
+      "Czech Rep.",
+      "Slovakia",
+      "Ukraine",
+      "Belarus",
+      "Lithuania",
+      "Denmark",
+      "Sweden"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Moldova",
+    "continent": "Europe",
+    "neighbors": [
+      "Ukraine",
+      "Romania"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Belgium",
+    "continent": "Europe",
+    "neighbors": [
+      "United Kingdom",
+      "France",
+      "Netherlands",
+      "Germany",
+      "Luxembourg"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Sweden",
+    "continent": "Europe",
+    "neighbors": [
+      "Norway",
+      "Finland",
+      "Estonia",
+      "Latvia",
+      "Lithuania",
+      "Denmark"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Norway",
+    "continent": "Europe",
+    "neighbors": [
+      "Sweden",
+      "Denmark",
+      "United Kingdom",
+      "Faroe Islands"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Hungary",
+    "continent": "Europe",
+    "neighbors": [
+      "Austria",
+      "Slovenia",
+      "Romania",
+      "Croatia",
+      "Slovakia",
+      "Serbia",
+      "Ukraine"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Poland",
+    "continent": "Europe",
+    "neighbors": [
+      "Germany",
+      "Belarus",
+      "Czech Rep",
+      "Slovakia",
+      "Lithuania",
+      "Ukraine"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Switzerland",
+    "continent": "Europe",
+    "neighbors": [
+      "France",
+      "Austria",
+      "Liechtenstein",
+      "Italy"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Spain",
+    "continent": "Europe",
+    "neighbors": [
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "id": 31,
     "name": "Venezuela",
     "continent": "South America",
     "neighbors": [
@@ -188,7 +363,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 32,
     "name": "Bolivia",
     "continent": "South America",
     "neighbors": [
@@ -199,7 +374,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 33,
     "name": "Chile",
     "continent": "South America",
     "neighbors": [
@@ -209,7 +384,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 34,
     "name": "Paraguay",
     "continent": "South America",
     "neighbors": [
@@ -219,7 +394,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 35,
     "name": "Uruguay",
     "continent": "South America",
     "neighbors": [
@@ -229,7 +404,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 36,
     "name": "Ecuador",
     "continent": "South America",
     "neighbors": [
@@ -239,7 +414,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 37,
     "name": "Guyana",
     "continent": "South America",
     "neighbors": [
@@ -249,7 +424,17 @@
     ]
   },
   {
-    "id": 23,
+    "id": 38,
+    "name": "\bSuriname",
+    "continent": "South America",
+    "neighbors": [
+      "Guyana",
+      "Brazil",
+      "French Guiana"
+    ]
+  },
+  {
+    "id": 39,
     "name": "Mexico",
     "continent": "North America",
     "neighbors": [
@@ -258,7 +443,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 40,
     "name": "United States of America",
     "continent": "North America",
     "neighbors": [
@@ -267,7 +452,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 41,
     "name": "Gutemala",
     "continent": "North America",
     "neighbors": [
@@ -278,7 +463,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 42,
     "name": "Honduras",
     "continent": "North America",
     "neighbors": [
@@ -289,7 +474,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 43,
     "name": "Cuba",
     "continent": "North America",
     "neighbors": [
@@ -301,7 +486,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 44,
     "name": "Haiti",
     "continent": "North America",
     "neighbors": [
@@ -312,7 +497,7 @@
     ]
   },
   {
-    "id": 29,
+    "id": 45,
     "name": "El Salvador",
     "continent": "North America",
     "neighbors": [
@@ -322,16 +507,55 @@
     ]
   },
   {
-    "id": 30,
+    "id": 46,
+    "name": "Belize",
+    "continent": "North America",
+    "neighbors": [
+      "Guatemala",
+      "Honduras",
+      "Cuba",
+      "Mexico"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Jamaica",
+    "continent": "North America",
+    "neighbors": [
+      "\bHaiti",
+      "Cuba",
+      "Honduras"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Nicaragua",
+    "continent": "North America",
+    "neighbors": [
+      "San Jose",
+      "Honduras"
+    ]
+  },
+  {
+    "id": 49,
     "name": "Canada",
     "continent": "North America",
     "neighbors": [
       "United States of America",
-      "Alaska(USA)"
+      "Alaska (USA)"
     ]
   },
   {
-    "id": 31,
+    "id": 50,
+    "name": "Dominica",
+    "continent": "North America",
+    "neighbors": [
+      "Martinique",
+      "Guadeloupe"
+    ]
+  },
+  {
+    "id": 51,
     "name": "Australia",
     "continent": "Oceania",
     "neighbors": [
@@ -341,37 +565,37 @@
     ]
   },
   {
-    "id": 32,
+    "id": 52,
     "name": "Vanuatu",
     "continent": "Oceania",
     "neighbors": [
       "Solomon Islands",
-      "New Caledonia(France)"
+      "New Caledonia (France)"
     ]
   },
   {
-    "id": 33,
+    "id": 53,
     "name": "New Zealand",
     "continent": "Oceania",
     "neighbors": [
       "Australia",
-      "New Caledonia(France)",
-      "Tasmania(Australia)"
+      "New Caledonia (France)",
+      "Tasmania (Australia)"
     ]
   },
   {
-    "id": 34,
+    "id": 54,
     "name": "Solomon Islands",
     "continent": "Oceania",
     "neighbors": [
       "Papua New Guinea",
       "Australia",
-      "New Caledonia(France)",
+      "New Caledonia (France)",
       "Vanuatu"
     ]
   },
   {
-    "id": 35,
+    "id": 55,
     "name": "Papua New Guinea",
     "continent": "Oceania",
     "neighbors": [
@@ -381,8 +605,8 @@
     ]
   },
   {
-    "id": 36,
-    "name": "New Caledonia(France)",
+    "id": 56,
+    "name": "New Caledonia (France)",
     "continent": "Oceania",
     "neighbors": [
       "Vanuatu",
@@ -391,13 +615,13 @@
     ]
   },
   {
-    "id": 37,
-    "name": "Tasmania(Australia)",
+    "id": 57,
+    "name": "Tasmania (Australia)",
     "continent": "Oceania",
     "neighbors": [
       "Australia",
       "New Zealand",
-      "New Caledonia(France)"
+      "New Caledonia (France)"
     ]
   }
 ]
