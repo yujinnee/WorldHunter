@@ -1,10 +1,9 @@
 ###App logo
 Earth(Flatticon)
-<a href="https://www.flaticon.com/kr/free-icons/" title="세계 아이콘">세계 아이콘  제작자: juicy_fish - Flaticon</a>
+https://www.flaticon.com/free-icon/planet-earth_1542833
 
 Treasure(Flaticon)
-<a href="https://www.flaticon.com/kr/free-icons/" title="가슴 아이콘">가슴 아이콘  제작자: Smashicons - Flaticon</a>
-
+https://www.flaticon.com/free-icon/treasure_1355876
 ### Map
 World map(Vecteezy)
-<a href="https://www.vecteezy.com/free-vector/map">Map Vectors by Vecteezy</a>
+https://www.vecteezy.com/vector-art/171602-colorful-global-vector-map-illustration
