@@ -1,5 +1,8 @@
 # WorldHunter
 
+![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
+
+
 https://github.com/yujinnee/WorldHunter/assets/51031771/09b93c56-8e1c-4298-a109-fbe475e327f3
 
 
