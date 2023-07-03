@@ -1,9 +1,9 @@
 # 🌎 WorldHunter
 
  WWDC23 Swift Student Challenge - World Geography Education App [Accepted]
-![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
 <img src="https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88  width="200" height="400"/>
 World Hunter is a Swift UI app for global geographic information education. It gives a hint of the name information about the countries around treasure, and based on this hint, you can find a country where treasure is hidden. In this process, you can learn the geographical information of the country where the treasure is hidden and the geographical information of the surrounding country together.
+![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
 
 # Example Video of Quiz View
 
