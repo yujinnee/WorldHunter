@@ -3,8 +3,7 @@
  WWDC23 Swift Student Challenge - World Geography Education App [Accepted]
 ![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
 
-# Example Video
-## Africa
+# Example Video of Quiz View
 
 https://github.com/yujinnee/WorldHunter/assets/51031771/09b93c56-8e1c-4298-a109-fbe475e327f3
 
