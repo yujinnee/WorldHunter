@@ -1,4 +1,4 @@
-# WorldHunter
+# 🌎 WorldHunter
 
  WWDC23 Swift Student Challenge - World Geography Education App [Accepted]
 ![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
