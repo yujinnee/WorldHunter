@@ -10,6 +10,7 @@ The core functions of the app are continental selection, country quiz and treasu
 
 # 🛠️ Technologies
 - SwiftUI
+- UIKit
 - SceneKit
 - ARKit
 
