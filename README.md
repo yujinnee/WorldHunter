@@ -2,12 +2,32 @@
 
  WWDC23 Swift Student Challenge - World Geography Education App [Accepted]
 
-<img src="https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88" width="200" height="400"/>
+<p align="center"><img src="https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88" width="50%" height="50%"></p>
 
 World Hunter is a Swift UI app for global geographic information education. It gives a hint of the name information about the countries around treasure, and based on this hint, you can find a country where treasure is hidden. In this process, you can learn the geographical information of the country where the treasure is hidden and the geographical information of the surrounding country together.
-![image](https://github.com/yujinnee/WorldHunter/assets/51031771/85e8ca93-94bc-485b-b210-f5325b968e88)
+The core functions of the app are continental selection, country quiz and treasure observation.
 
-# Example Video of Quiz View
+## 🛠️ Technologies
+- SwiftUI
+- SceneKit
+- ARKit
+
+
+## 🌎 Screens
+
+<p align="center"><img src="https://github.com/yujinnee/WorldHunter/assets/51031771/1664c8b6-c0ac-4057-b056-2c78fc356618" width="50%" height="50%"></p>
+This is the Continental Selection screen. The 3D Earth is implemented so that you can choose the continent you want to find treasure and learn the shape and location of the six continents of the world. For this function, I used ARKit framework technology. You can freely spin the globe with your fingers and enjoy the view of the Earth.
+
+<p align="center"><img src="https://github.com/yujinnee/WorldHunter/assets/51031771/716e57f4-c5e9-4a5a-902d-0541e46d5644" width="50%" height="50%"></p>
+
+After selecting a continent, a map of that continent appears and hints about the country where the treasure is hidden appear. This hint is about neighboring countries surrounding the country where the treasure is hidden. You can zoom in, zoom out and move the map implemented with UIScrollView of UIKit and explore the country where the treasure is hidden.
+On the right side of the map, there are buttons where you can enter the correct answers.
+If the answer is wrong, an alert window appears asking you to find it again, and if the answer is correct, it goes to the Treasure Observation Screen.
+
+
+
+
+# Example video of Views
 
 https://github.com/yujinnee/WorldHunter/assets/51031771/09b93c56-8e1c-4298-a109-fbe475e327f3
 
